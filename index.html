@@ -7,35 +7,101 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/vendor/modernizr.js"></script>
     <script src="/js/foundation.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<!--     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Merriweather:400,300,900' rel='stylesheet' type='text/css'> -->
   </head>
   <body>
+
+
+<!-- 	top bar -->
   	
-  	<div class="large-12columns">
-  		
-  		<h1 class="logo">Motus</h1>
-	  	<nav>
-	  		<li><a href="/about" class="">About</a></li>
-	  		<li><a href="/explore" class="">Explore</a></li>
-	  		<li><a href="/search" class="">Search</a></li>
-	  	</nav>
-	  	
-	  	<nav>
-	  		<li><a href="/login" class="">Log In</a></li>
-	  		<li><a href="/signup" class="">Sign Up</a></li>
-	  	</nav>
   	
+  	<div class="sticky">
+  		<nav class="top-bar" data-topbar>	
+  			<div class="logo">
+  				<img src="img/logo.png">
+  			</div>
+		  <ul class="title-area">
+		    <li class="name">
+		      <h1><a href="#">MOTUS</a></h1>
+		    </li>
+		    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+		  </ul> 
+		
+		  <section class="top-bar-section">
+		    <!-- Right Nav Section -->
+		    <ul class="right">
+		      <li class="has-dropdown"> 
+		        <a href="#">MENU</a>
+		        <ul class="dropdown">
+		        
+		          <li><a href="#">LOG IN</a></li>
+		          <li><a href="#">SIGN UP</a></li>
+		        </ul>
+		      </li>
+		    </ul>
+		
+		    <!-- Left Nav Section -->
+		    <ul class="left">
+		      <li><a href="#">ABOUT</a></li>
+			  <li><a href="#">EXPLORE</a></li>
+				  <li class="has-form">
+				  <div class="row collapse">
+				    <div class="large-8 small-3 columns">
+				      <input type="text" placeholder="FIND STUFF">
+				    </div>
+				    <div class="large-4 small-3 columns">
+				      <a href="#" class="alert button expand">SEARCH</a>
+				    </div>
+				  </div>
+				</li>
+		    </ul>
+		  </section>
+		</nav>
   	</div>
   	
-  	<div class="row">
-      <div class="large-12 columns">
-        <h1>Artisans,<br>Share what you do best.</h1>
-      </div>
-    </div>
+  	
+<!--   	this is the main hero text -->
+  	
+  	
+  	<section id="hero" data-speed="10" data-type="background">  
+  	  	<div class="row">
+	  	    <div class="large-12-hero columns">
+		        <h1>ARTISANS.<br>SHARE WHAT YOU DO BEST.</h1>
+		    </div>
+		    <div class="large-12 columns">
+				  <p><a href="#" class="small button">EXPLORE</a></p>
+				  <p><a href="#" class="small button">WALKTHROUGH</a></p>
+				  <p><a href="" class="small button">THE STORYTELLING</a></p>
+		    </div>
+	  	</div>  
+    </section>
+    
+    
+    
+<!--   this is the intro -->
+
+    
+    <section id="intro-photo" data-speed="10" data-type="background">
+<!-- 	    <img src="img/intro.png">  -->
+    	<div class="intro">
+    	<h5>Manual Skills. <br>The results of centuries of perfecting arts and artisanal skills are endangered. <br><br>
+	    	How is it possible to connect masters and apprentices? How to make digital technologies more inclusive?<br><br>
+	    	Motus' purpose is to bridge people and different worlds.
+    	</h5>	
+    	</div>
+    </section>
+    	
+    	
+<!--     	FOOTER -->
+    	
     
     <footer>
     </footer>
     
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
@@ -44,9 +110,12 @@
 </html>
 
 
-<!-- This is foundation stuff -->
+<!-------------------------------------
+	-- This is foundation stuff --
+--------------------------------------->
 
    
+<!--
     <div class="row">
       <div class="large-12 columns">
         <h1>Welcome to Foundation</h1>
@@ -77,8 +146,10 @@
     <div class="row">
       <div class="large-8 medium-8 columns">
         <h5>Here&rsquo;s your basic grid:</h5>
+-->
         <!-- Grid Example -->
 
+<!--
         <div class="row">
           <div class="large-12 columns">
             <div class="callout panel">
@@ -202,3 +273,4 @@
     </script>
   </body>
 </html>
+-->

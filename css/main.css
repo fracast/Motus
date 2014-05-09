@@ -26,6 +26,73 @@ meta.foundation-data-attribute-namespace {
 
 html, body {
   height: 100%; }
+  
+  
+  /*font faces */
+
+@font-face {
+  font-family: 'Neutra';
+  src: url('Neutra-Black.eot'); /* IE9 Compat Modes */
+  src: url('Neutra-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Neutra-Black.woff') format('woff'), /* Modern Browsers */
+       url('Neutra-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Neutra-Black.svg#00232f548104ea53bd2d9ed53c1bc5a1') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  900;
+}
+
+@font-face {
+  font-family: 'Neutra';
+  src: url('Neutra-Bold.eot'); /* IE9 Compat Modes */
+  src: url('Neutra-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Neutra-Bold.woff') format('woff'), /* Modern Browsers */
+       url('Neutra-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Neutra-Bold.svg#3452c93bb34afe48a29a1113e2a57dcd') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Neutra';
+  src: url('Neutra-Light.eot'); /* IE9 Compat Modes */
+  src: url('Neutra-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Neutra-Light.woff') format('woff'), /* Modern Browsers */
+       url('Neutra-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Neutra-Light.svg#9224787f5d2e01d369e919e117e6d669') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Neutra';
+  src: url('Neutra-Medium.eot'); /* IE9 Compat Modes */
+  src: url('Neutra-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Neutra-Medium.woff') format('woff'), /* Modern Browsers */
+       url('Neutra-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Neutra-Medium.svg#22c75e5f89f1fb5dc13774a92f455d41') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Neutra';
+  src: url('Neutra-Thin.eot'); /* IE9 Compat Modes */
+  src: url('Neutra-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Neutra-Thin.woff') format('woff'), /* Modern Browsers */
+       url('Neutra-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Neutra-Thin.svg#bc0ad6c4e6c921a6ac60de6dd2d91841') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  100;
+}
+
+
+/* GENERAL */
+
 
 *,
 *:before,
@@ -37,13 +104,13 @@ html, body {
 html,
 body {
   font-size: 100%; }
-                                                                                                                                    
+
 body {
   background: white;
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Neutra, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -150,6 +217,25 @@ select {
   padding-right: 0.9375rem;
   width: 100%;
   float: left; }
+  
+#hero{
+	background: url(../img/hero.png) 50% 0 no-repeat fixed; 
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    height: 1000px;
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+
+.logo{
+	position: relative;
+	float: left;
+	margin-left: 3%;
+}
+
+
 
 @media only screen {
   .small-push-0 {
@@ -892,6 +978,37 @@ select {
 
   .large-12 {
     width: 100%; }
+    
+  .large-12-hero{
+	width: 100%;
+	margin-top: 30%;
+	margin-bottom: 7%;
+	color: #ff7400;
+  }
+  
+  #intro-photo{
+	background: url(../img/intro.png) 50% 0 no-repeat; 
+	height: 1000px;  
+	margin-top: -20%;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);  }
+  
+  .intro{
+  	width: 100%;
+  	height: 900px;
+  	position: relative;
+  	float: left;
+  	margin-top: 2%; 
+  	padding-left: 15%;
+  	padding-right: 15%;
+  	padding-top: 10%;
+  	padding-bottom: 30%;
+  	text-transform: uppercase;
+  	color:#005fff;
+  }
 
   [class*="column"] + [class*="column"]:last-child {
     float: right; }
@@ -1078,31 +1195,34 @@ select {
     position: relative;
     right: 91.66667%;
     left: auto; } }
+    
+  
+    
 button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: Neutra, Helvetica, Arial, sans-serif;
+  font-weight: 700;
   line-height: normal;
-  margin: 0 0 1.25rem;
+  margin: 0;
   position: relative;
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   display: inline-block;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   padding-right: 2rem;
-  padding-bottom: 1.0625rem;
+  padding-bottom: 0.5rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #008cba;
+  background-color: #ffffff;
   border-color: #007095;
-  color: white;
+  color: #ff7400;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #007095; }
+    background-color: #ff7400; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -1122,11 +1242,14 @@ button, .button {
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       color: white; }
   button.alert, .button.alert {
-    background-color: #f04124;
+    background-color:  rgba(255,255,255,0.19);
     border-color: #cf2a0e;
-    color: white; }
+    color: white; 
+    font-size: 0.5em;
+    font-weight: 200;
+    }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
-      background-color: #cf2a0e; }
+      background-color: #0096ff; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       color: white; }
   button.large, .button.large {
@@ -1136,10 +1259,10 @@ button, .button {
     padding-left: 2.25rem;
     font-size: 1.25rem; }
   button.small, .button.small {
-    padding-top: 0.875rem;
+    padding-top: 0.2rem;
     padding-right: 1.75rem;
-    padding-bottom: 0.9375rem;
-    padding-left: 1.75rem;
+    padding-bottom: 0.1rem;
+    padding-left: 1.75 rem;
     font-size: 0.8125rem; }
   button.tiny, .button.tiny {
     padding-top: 0.625rem;
@@ -1358,7 +1481,7 @@ meta.foundation-mq-topbar {
     color: white;
     padding: 12px 0 12px 0;
     padding-left: 15px;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Neutra, Helvetica, Arial, sans-serif;
     font-size: 0.8125rem;
     font-weight: normal;
     text-transform: none;
@@ -2150,7 +2273,7 @@ div.switch {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Neutra, Helvetica, Arial, sans-serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -2158,7 +2281,7 @@ div.switch {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Neutra, Helvetica, Arial, sans-serif; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -2504,7 +2627,7 @@ div.switch {
       background: #efefef;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: Neutra, Helvetica, Arial, sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover {
         background: #e1e1e1; }
@@ -2606,7 +2729,7 @@ ul.pagination {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: Neutra, Helvetica, Arial, sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -2618,7 +2741,7 @@ ul.pagination {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
       font-weight: normal;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+      font-family: Neutra, Helvetica, Arial, sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -2644,7 +2767,7 @@ ul.pagination {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: Neutra, Helvetica, Arial, sans-serif;
       font-size: 1rem; }
       .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -2837,8 +2960,25 @@ p {
     font-style: italic; }
 
 /* Default header styles */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+h1{
+	font-family: Neutra, Helvetica, Arial, sans-serif;
+	font-weight: 900;
+/* 	color: #d70000; */
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.9);
+	font-size: 1 rem; 
+}
+
+h2{
+	font-family: Neutra, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #343434;
+	font-variant: small-caps;
+	font-size: 3rem;
+}
+
+h3, h4, h5, h6 {
+  font-family: Neutra, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -2851,12 +2991,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #6f6f6f;
     line-height: 0; }
 
-h1 {
-  font-size: 2.125rem; }
-
-h2 {
-  font-size: 1.6875rem; }
-
 h3 {
   font-size: 1.375rem; }
 
@@ -2864,7 +2998,9 @@ h4 {
   font-size: 1.125rem; }
 
 h5 {
-  font-size: 1.125rem; }
+  color:#0085ff;
+  text-shadow: 0px 0px 6px white;
+  font-size: 3rem; }
 
 h6 {
   font-size: 1rem; }
@@ -3016,7 +3152,7 @@ blockquote p {
     line-height: 1.4; }
 
   h1 {
-    font-size: 2.75rem; }
+    font-size: 4.5rem; }
 
   h2 {
     font-size: 2.3125rem; }
@@ -3573,7 +3709,7 @@ dialog[open] {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Neutra, Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -3755,7 +3891,7 @@ dialog[open] {
       right: auto; } }
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Neutra, Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
