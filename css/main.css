@@ -267,6 +267,11 @@ footer{
      display: block; }
 }
 
+.story{
+
+	width: 120%;
+}
+
 
 @media only screen {
   .small-push-0 {
